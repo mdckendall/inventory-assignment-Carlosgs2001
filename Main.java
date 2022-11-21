@@ -132,7 +132,6 @@ class Main {
 
         System.out.println("Enter the new name:");
         String nName = sc.nextLine();
-        sc.next();
         System.out.println("Enter the new value in dollars (whole number):");
         val = sc.nextInt();
          sc.nextLine();
