@@ -100,6 +100,7 @@ class Main {
         System.out.println("Press 4 to show all the items.");
         System.out.println("Press 5 to quit the program.");
         int input = sc.nextInt();
+        sc.nextLine();
         
         if(input == 1){
             aout=input;
