@@ -90,6 +90,7 @@ class InventorySystem {
 class Main {
   public static void main(String[] args) {
     int aout = 0;
+    int val=0;
     String serrialNumber = "";
     InventorySystem inventory = new InventorySystem();
     Scanner sc = new Scanner(System.in);
@@ -111,7 +112,7 @@ class Main {
         System.out.println("Enter the serial number:");
         serrialNumber = sc.next();
         System.out.println("Enter the value in dollars (whole number):");
-        int value = sc.nextInt();
+      val = sc.nextInt();
         sc.nextLine();
         Inventory product = new Inventory(name, serrialNumber, value);
         inventory.addProduct(product);
@@ -132,9 +133,9 @@ class Main {
         System.out.println("Enter the new name:");
         String nName = sc.nextLine();
         System.out.println("Enter the new value in dollars (whole number):");
-        value = sc.nextInt();
+        val = sc.nextInt();
          sc.nextLine();
-        inventory.update(serrialNumber, nName, vValue);
+        inventory.update(serrialNumber, nName, val);
       }
 
       else if (input == 4) {
