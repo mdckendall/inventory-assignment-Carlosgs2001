@@ -112,6 +112,7 @@ class Main {
           serrialNumber = sc.next();
           System.out.println("Enter the value in dollars (whole number):");
           int value = sc.nextInt();
+          sc.nextLine();
           Inventory product = new Inventory(name, serrialNumber, value);
           inventory.addProduct(product);
         }
@@ -134,6 +135,7 @@ class Main {
           System.out.println("Enter the new value in dollars (whole number):");
           int vValue;
           vValue=sc.nextInt();
+         sc.nextLine();
           inventory.update(serrialNumber, nName, vValue);
         } 
         
