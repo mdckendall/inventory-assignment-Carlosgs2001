@@ -91,7 +91,7 @@ class Main {
      int aout=0;
       String serrialNumber="";
       InventorySystem inventory = new InventorySystem();
-      Scanner sc = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in);
       
       do{
         System.out.println("Press 1 to add an item.");
@@ -99,8 +99,8 @@ class Main {
         System.out.println("Press 3 to update an item.");
         System.out.println("Press 4 to show all the items.");
         System.out.println("Press 5 to quit the program.");
-        int input = sc.nextInt();
-        sc.nextLine();
+        int input = scanner.nextInt();
+        scanner.nextLine();
         
         if(input == 1){
             aout=input;
@@ -109,10 +109,10 @@ class Main {
           String name = s1c.nextLine();
           
           System.out.println("Enter the serial number:");
-          serrialNumber = sc.next();
+          serrialNumber = scanner.next();
           System.out.println("Enter the value in dollars (whole number):");
-          int value = sc.nextInt();
-          sc.nextLine();
+          int value = scanner.nextInt();
+          scanner.nextLine();
           Inventory product = new Inventory(name, serrialNumber, value);
           inventory.addProduct(product);
         }
@@ -120,22 +120,22 @@ class Main {
        else if(input == 2){
             aout=input;
           System.out.println("Enter the serial number of the item to delete:");
-        serrialNumber=sc.next();
+        serrialNumber=scanner.next();
          inventory.remove(serrialNumber);   
         }
         
        else if(input == 3){
             aout=input;
            System.out.println("Enter the serial number of the item to change:");
-          serrialNumber=sc.next();
+          serrialNumber=scanner.next();
          
           System.out.println("Enter the new name:");
           Scanner s2c = new Scanner(System.in);
           String nName = s2c.nextLine();
           System.out.println("Enter the new value in dollars (whole number):");
           int vValue;
-          vValue=sc.nextInt();
-         sc.nextLine();
+          vValue=scanner.nextInt();
+         scanner.nextLine();
           inventory.update(serrialNumber, nName, vValue);
         } 
         
