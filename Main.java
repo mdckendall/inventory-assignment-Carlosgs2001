@@ -132,9 +132,8 @@ class Main {
         System.out.println("Enter the new name:");
         String nName = sc.nextLine();
         System.out.println("Enter the new value in dollars (whole number):");
-        int vValue;
-        vValue = sc.nextInt();
-        sc.nextLine();
+        int vValue = sc.nextInt();
+         sc.nextLine();
         inventory.update(serrialNumber, nName, vValue);
       }
 
