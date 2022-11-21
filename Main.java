@@ -131,7 +131,7 @@ class Main {
         serrialNumber = sc.next();
 
         System.out.println("Enter the new name:");
-        String nName = sc.nextLine();
+        String nName = sc.next();
         System.out.println("Enter the new value in dollars (whole number):");
         val = sc.nextInt();
          sc.nextLine();
