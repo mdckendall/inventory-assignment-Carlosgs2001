@@ -114,7 +114,7 @@ class Main {
         System.out.println("Enter the value in dollars (whole number):");
       val = sc.nextInt();
         sc.nextLine();
-        Inventory product = new Inventory(name, serrialNumber, value);
+        Inventory product = new Inventory(name, serrialNumber, val);
         inventory.addProduct(product);
       }
 
